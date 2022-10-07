@@ -26,9 +26,9 @@ PrintIntArray(numbers);
 
 // считаем четные числа 
 int сount_num_of_even = 0;
-for(int i = 0; i< numbers.Length; i++)
+for (int i = 0; i < numbers.Length; i++)
 {
-    if (numbers[i]%2 == 0)
+    if (numbers[i] % 2 == 0)
     {
         сount_num_of_even++;
     }

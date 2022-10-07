@@ -12,9 +12,9 @@ string IntArrayToString(int[] arr)
     return str + "]";
 }
 
-// правильно ли я тут работаю с паматью?
-// несмог найти хороший способ находу добавлять новые элементы в массив илиже делать срез как в питоне
-int[] ReadArrayInt(string str) 
+// правильно ли я тут работаю с памятью?
+// не смог найти хороший способ находу добавлять новые элементы в массив или же делать срез как в питоне
+int[] ReadArrayIntFromString(string str) 
 {
     int[] result_temp = new int[30]; // выделяю память с запасом
     int countInt = 0;
@@ -36,7 +36,7 @@ int[] ReadArrayInt(string str)
     }
 
     int[] result = new int[countInt]; // выделяю память для финальных данных
-    for(int i=0; i < countInt; i++) result[i] = result_temp[i]; // переписываю туда найденые числа
+    for(int i=0; i < countInt; i++) result[i] = result_temp[i]; // переписываю туда найденные числа
     return result; // возвращаем result в котором нет лишней памяти
 }
 
